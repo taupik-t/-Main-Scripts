@@ -2,12 +2,12 @@ import os
 from PIL import Image
 
 # Path to the folder containing the images
-image_folder = r"Just Twilight/Chapter 45"
+image_folder = r"C:\Users\taupi\Downloads\MY FILE\Code\Scripts\New folder"
 # Output PDF file path
-pdf_path = r"Just Twilight/Chapter 45/Chapter 45.pdf"
+pdf_path = r"C:\Users\taupi\Downloads\MY FILE\Code\Scripts\New folder\output.pdf"
 
 # Get all image files in the folder
-image_files = [f for f in os.listdir(image_folder) if f.lower().endswith(('jpg', 'jpeg', 'png', 'webp'))]
+image_files = [f for f in os.listdir(image_folder) if f.lower().endswith(('jpg', 'jpeg', 'png'))]
 image_files.sort()  # Sort files to maintain order
 
 # Convert images to PDF

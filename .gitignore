@@ -1,0 +1,6 @@
+# Ignore the Download folder
+Download/
+
+# Ignore the venv folder
+venv/
+
