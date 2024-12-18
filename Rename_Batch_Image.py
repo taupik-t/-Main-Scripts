@@ -1,6 +1,5 @@
 import os
 
-
 def rename_images(folder_path):
     for root, dirs, files in os.walk(folder_path):
         for file in files:
@@ -16,7 +15,6 @@ def rename_images(folder_path):
                     # Rename the file
                     os.rename(file_path, new_path)
                     print(f"Renamed: {file} -> {new_name}")
-
 
 # Specify the folder path
 folder_path = r"D:\\Code\\Scripts\\Download\\Komik\\_Manhua\\The Demon King Who Lost His Job\\Chapter 1"

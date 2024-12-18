@@ -59,4 +59,3 @@ for folder in folders:
     print(f'Compressed and renamed: {zip_path} to {cbz_path}')
 
 print('All folders have been compressed and renamed.')
-

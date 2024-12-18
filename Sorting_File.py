@@ -54,7 +54,7 @@ def categorize_file(file_path, source_directory):
 
     else:
         if file_path.lower().endswith(
-            (".jpg", ".png", ".jpeg", ".gif", ".webp", ".ico", ".svg")
+            (".jpg", ".png", ".jpeg", ".gif", ".webp", ".ico", ".svg", ".heic")
         ):
             create_directory_if_not_exists("D:\\Pictures")
             move_file_with_rename(
@@ -68,7 +68,7 @@ def categorize_file(file_path, source_directory):
                 file_path,
                 os.path.join("D:\\Documents", os.path.basename(file_path)),
             )
-        elif file_path.lower().endswith((".mp4", ".mkv", ".avi", ".mov")):
+        elif file_path.lower().endswith((".mp4", ".mkv", ".avi", ".mov", ".webm")):
             create_directory_if_not_exists("D:\\Videos")
             move_file_with_rename(
                 file_path, os.path.join("D:\\Videos", os.path.basename(file_path))
@@ -86,7 +86,7 @@ def categorize_file(file_path, source_directory):
             move_file_with_rename(
                 file_path, os.path.join("D:\\Code", os.path.basename(file_path))
             )
-        elif file_path.lower().endswith((".exe", ".app")):
+        elif file_path.lower().endswith((".exe", ".app", ".apk", ".msi")):
             create_directory_if_not_exists("D:\\Apps")
             move_file_with_rename(
                 file_path, os.path.join("D:\\Apps", os.path.basename(file_path))
